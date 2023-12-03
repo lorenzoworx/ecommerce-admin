@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --color-ffd333: #ffd333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: Roboto, sans-serif !important;
 }
 
-.App-header {
-  background-color: #282c34;
+/* Main Layout Component */
+.ant-layout {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.ant-layout-sider-children > .logo {
+  height: 32px;
+  margin: 16px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Authentication Components */
+.authentication-wrapper {
+  background-color: var(--color-ffd333);
+  min-height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.authentication-form > button {
+  background-color: var(--color-ffd333);
+  text-decoration: none;
 }
